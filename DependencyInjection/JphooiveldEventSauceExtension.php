@@ -34,7 +34,6 @@ final class JphooiveldEventSauceExtension extends Extension
         $loader->load('inflector.xml');
         $loader->load('aggregate_repository.xml');
         $loader->load('serializer.xml');
-        $loader->load('upcasting.xml');
 
         if ($config['messenger']['enabled'] === true) {
             if (!interface_exists(MessageBusInterface::class)) {
